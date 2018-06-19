@@ -6,5 +6,5 @@ def my_select(collection)
     new << yield(collection[i])
     i += 1
   end
-    new
+    new.select(i)
 end
