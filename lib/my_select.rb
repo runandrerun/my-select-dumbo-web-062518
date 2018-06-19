@@ -6,11 +6,5 @@ def my_select(collection)
     new << yield(collection[i])
     i += 1
   end
-    new.compact
+    new
 end
-
-my_select(nums) do |num| 
-  if num.even?
-    num 
-  end 
-end 
