@@ -1,10 +1,11 @@
-def my_select(collection)
- # your code here!
- new = []
- i = 0
- while i < collection.length
-    new << yield(collection[i])
-    i += 1
-  end
-    new
-end
+def my_select(collection) 
+  empty_arr = [] 
+  
+  i=0 
+  while i < collection.length
+  empty_arr.push yield(collection[i]) 
+  i += 1 
+end 
+
+  empty_arr.compact 
+end 
